@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Cores */
+    --violeta: #D7D4FF;
+    --cinza-2B: #2B2B2B;
+    --cinza-55: #555555;
+    --cor-botao: #6C63FF;
+    --cor-branca: #FFFFFF;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    height: 560px;
+    width: 100%;
+    background-color: var(--violeta);
+}
+
+#infoTopo {
+    margin-top: 140px;
+}
+
+#infoTopo h1 {
+    width: 350px;
+    height: 95px;
+    font-family: 'Merriweather';
+    font-size: 36px;
+    line-height: 47px;
+    color: var(--cinza-2B);
+}
+
+#infoTopo p {
+    width: 390px;
+    height: 95px;
+    font-family: 'Lato';
+    font-size: 19px;
+    line-height: 32px;
+    color: var(--cinza-55);
+    margin-top: 18px;
+}
+
+#infoTopo button {
+    margin-top: 45px;
+    width: 155px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--cor-botao);
+    color: var(--cor-branca);
+    font-size: 20px;
+    font-family: 'Lato';
+    border: none;
+    filter: drop-shadow(0 5px 5px rgba(23, 23, 23, 0.1));
+    cursor: pointer;
+}
+
+.test svg {
+    margin-top: 90px;
+    width: 500px;
+}
+
+/* Card-colors */
+.color-red {
+    background-color: #FF6363;
+}
+
+.color-aqua {
+    background-color: #63ECFF;
+}
+
+.color-pink {
+    background-color: #ed87f6;
+}
+
+.color-green {
+    background-color: #63FF73;
+}
+
+.color-yellow {
+    background-color: #FFDD63;
+}
+
+.color-blue-violet {
+    background-color: #6663FF;
+}
+
+/* cards */
+#cards {
+    margin-top: 150px;
+    background-color: var(--cor-branca);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.item-card {
+    width: 340px;
+    height: 425px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.1));
+    border-radius: 2px;
+    background-color: var(--cor-branca);
+    margin-bottom: 10px;
+}
+
+.card-color {
+    height: 225px;
+}
+
+.info-card {
+    padding-top: 24px;
+    padding-left: 30px;
+}
+
+.info-card h2 {
+    width: 168px;
+    height: 30px;
+    font-family: 'Merriweather';
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--cinza-2B);
+}
+
+.info-card p {
+    margin-top: 26px;
+    width: 280px;
+    height: 90px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--cinza-55);
+}
+
+/* Seção Form */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    background-color: var(--violeta);
+}
+
+#form h2 {
+    text-align: center;
+    margin-top: 85px;
+    height: 40px;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--cinza-2B);
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+form input {
+    width: 470px;
+    height: 65px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--cinza-55);
+}
+
+form textarea {
+    width: 470px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    resize: none;
+    color: var(--cinza-55);
+}
+
+form input[type=submit] {
+    height: 50px;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: var(--cor-botao);
+    color: var(--cor-branca);
+    filter: drop-shadow(0 5px 5px rgba(23, 23, 23, 0.1));
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form input[type=submit]:hover {
+    background-color: #4d4bea
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* topo */
+    #container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .test svg {
+        width: 400px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .item-card {
+        width: 280px;
+        height: 400px;
+    }
+
+    .card-color {
+        height: 200px;
+    }
+
+    /* form */
+
+    form input[type=submit] {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* topo */
+
+    #infoTopo h1 {
+        width: 300px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #infoTopo p {
+        width: 310px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #infoTopo button {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .test svg {
+        width: 350px;
+    }
+
+    .row {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* topo */
+
+    #infoTopo h1 {
+        width: 300px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #infoTopo p {
+        width: 310px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #infoTopo button {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .test svg {
+        width: 350px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .item-card {
+        width: 220px;
+        height: 400px;
+    }
+
+    .card-color {
+        height: 200px;
+    }
+
+    .info-card {
+        padding-left: 20px;
+    }
+
+    .info-card p {
+        width: 200px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    /* topo */
+
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #infoTopo {
+        margin-top: 30px;
+    }
+
+    #infoTopo h1 {
+        width: 374px;
+        height: 95px;
+        font-size: 34px;
+        line-height: 47px;
+    }
+
+    .test svg {
+        width: 380px;
+        margin-top: 0;
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* topo */
+
+    #container {
+        flex-direction: column;
+        height: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #infoTopo {
+        margin-top: 30px;
+    }
+
+    #infoTopo h1 {
+        width: 374px;
+        height: 95px;
+        font-size: 34px;
+        line-height: 47px;
+    }
+
+    #infoTopo p {
+        width: 374px;
+        height: 96px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    #infoTopo button {
+        width: 155px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .test svg {
+        margin: 0;
+        width: 360px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 75px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .item-card {
+        width: 374px;
+        height: 423px;
+        margin-bottom: 40px;
+    }
+
+    .card-color {
+        height: 222px;
+    }
+
+    .info-card {
+        padding-left: 35px;
+    }
+
+    .info-card h2 {
+        width: 185px;
+    }
+
+    .info-card p {
+        width: 310px;
+        height: 90px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #form {
+        margin-top: 20px;
+        height: 700px;
+    }
+
+    #form h2 {
+        margin-top: 80px;
+    }
+
+    form {
+        margin-top: 35px;
+    }
+
+    form input {
+        width: 360px;
+        height: 60px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    form textarea {
+        width: 360px;
+        padding: 15px;
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* topo */
+
+    #container {
+        flex-direction: column;
+        height: 800px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #infoTopo {
+        margin-top: 30px;
+    }
+
+    #infoTopo h1 {
+        width: 374px;
+        height: 95px;
+        font-size: 34px;
+        line-height: 47px;
+    }
+
+    #infoTopo p {
+        width: 374px;
+        height: 96px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    #infoTopo button {
+        width: 155px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .test svg {
+        margin: 0;
+        width: 360px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 75px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .item-card {
+        width: 374px;
+        height: 423px;
+        margin-bottom: 40px;
+    }
+
+    .card-color {
+        height: 222px;
+    }
+
+    .info-card {
+        padding-left: 35px;
+    }
+
+    .info-card h2 {
+        width: 185px;
+    }
+
+    .info-card p {
+        width: 310px;
+        height: 90px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #form {
+        margin-top: 20px;
+        height: 700px;
+    }
+
+    #form h2 {
+        margin-top: 80px;
+    }
+
+    form {
+        margin-top: 35px;
+    }
+
+    form input {
+        width: 360px;
+        height: 60px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    form textarea {
+        width: 360px;
+        padding: 15px;
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    /* topo */
+
+    #container {
+        height: 700px;
+        text-align: center;
+    }
+
+    #infoTopo h1 {
+        width: 340px;
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    #infoTopo p {
+        width: 340px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+
+    #infoTopo button {
+        width: 250px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .test svg {
+        width: 300px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 60px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .item-card {
+        width: 370px;
+        height: 420px;
+        margin-bottom: 30px;
+    }
+
+    .card-color {
+        height: 210px;
+    }
+
+    .info-card {
+        padding-left: 15px;
+    }
+
+    /* Form */
+
+    #form {
+        margin-top: 20px;
+        height: 650px;
+    }
+
+    #form h2 {
+        margin-top: 40px;
+    }
+
+    form input {
+        width: 330px;
+        padding: 14px;
+    }
+
+    form textarea {
+        width: 330px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* topo */
+
+    #container {
+        height: 700px;
+        text-align: center;
+    }
+
+    #infoTopo h1 {
+        width: 340px;
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    #infoTopo p {
+        width: 340px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+
+    #infoTopo button {
+        width: 250px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .test svg {
+        width: 300px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 60px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .item-card {
+        width: 370px;
+        height: 420px;
+        margin-bottom: 30px;
+    }
+
+    .card-color {
+        height: 210px;
+    }
+
+    .info-card {
+        padding-left: 15px;
+    }
+
+    /* Form */
+
+    #form {
+        margin-top: 20px;
+        height: 650px;
+    }
+
+    #form h2 {
+        margin-top: 40px;
+    }
+
+    form input {
+        width: 330px;
+        padding: 14px;
+    }
+
+    form textarea {
+        width: 330px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    /* topo */
+
+    #container {
+        display: grid;
+        height: 600px;
+        align-items: center;
+        padding: 0;
+    }
+
+    #infoTopo h1 {
+        width: 300px;
+        font-size: 28px;
+        line-height: 40px;
+        margin-right: 0;
+    }
+
+    #infoTopo p {
+        width: 300px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #infoTopo button {
+        font-size: 20px;
+    }
+
+    #container svg {
+        width: 260px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 40px;
+    }
+
+    .item-card {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .card-color {
+        height: 200px;
+    }
+
+    .info-card p {
+        width: 290px;
+    }
+
+    /* Form */
+
+    #form {
+        margin-top: 20px;
+        height: 650px;
+    }
+
+    #form h2 {
+        margin-top: 40px;
+        font-size: 28px;
+    }
+
+    form input {
+        width: 280px;
+        padding: 14px;
+    }
+
+    form textarea {
+        width: 280px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* topo */
+
+    #container {
+        display: grid;
+        height: 600px;
+        align-items: center;
+        padding: 0;
+    }
+
+    #infoTopo h1 {
+        width: 300px;
+        font-size: 28px;
+        line-height: 40px;
+        margin-right: 0;
+    }
+
+    #infoTopo p {
+        width: 300px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #infoTopo button {
+        font-size: 20px;
+    }
+
+    #container svg {
+        width: 260px;
+    }
+
+    /* cards */
+    #cards {
+        margin-top: 40px;
+    }
+
+    .item-card {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .card-color {
+        height: 200px;
+    }
+
+    .info-card p {
+        width: 290px;
+    }
+
+    /* Form */
+
+    #form {
+        margin-top: 20px;
+        height: 650px;
+    }
+
+    #form h2 {
+        margin-top: 40px;
+        font-size: 28px;
+    }
+
+    form input {
+        width: 280px;
+        padding: 14px;
+    }
+
+    form textarea {
+        width: 280px;
+        margin-bottom: 40px;
+    }
+}
